@@ -1,0 +1,71 @@
+@keyframes pulse {
+  0% {
+    transform: scale(1); /* Tamanho normal */
+  }
+  80% {
+    transform: scale(6); /* Tamanho aumentado em 10% */
+  }
+  100% {
+    transform: scale(1); /* Tamanho normal novamente */
+  }
+}
+
+.whatsapp-btn {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #25d366;
+  color: #fff;
+  text-decoration: none;
+  padding: 15px;
+  border-radius: 50%;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  z-index: 999;
+  animation: pulse 0.5s infinite; /* Aplica a animação "pulse" infinitamente durante 2 segundos */
+}
+
+.whatsapp-btn:hover {
+  background-color: #128C7E;
+}
+
+.whatsapp-btn img {
+  width: 30px;
+  vertical-align: middle;
+}
+
+
+/* Estilos padrão para todos os dispositivos */
+/* Estilos padrão para todos os dispositivos */
+/* Estilos padrão para todos os dispositivos */
+
+/* Estilos para dispositivos móveis (até 600px de largura) */
+@media (max-width: 600px) {
+    .image-container {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .image-container img, .image-container a {
+        margin: 5px;
+        border-radius: 50%;
+        width: 80px; /* Reduz o tamanho das imagens para dispositivos móveis */
+        height: 80px;
+    }
+}
+
+/* Estilos para dispositivos desktop (de 601px a 1024px de largura) */
+@media (min-width: 601px) and (max-width: 1024px) {
+    .image-container {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .image-container img, .image-container a {
+        margin: 5px;
+        border-radius: 50%;
+        width: 100px; /* Mantém o tamanho original das imagens para dispositivos desktop */
+        height: 100px;
+    }
+}
